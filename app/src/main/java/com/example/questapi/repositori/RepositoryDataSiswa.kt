@@ -1,0 +1,9 @@
+package com.example.questapi.repositori
+
+import com.example.questapi.apiservice.ServiceApiSiswa
+import com.example.questapi.modeldata.DataSiswa
+
+interface RepositoryDataSiswa {
+    suspend fun getDataSiswa() : List<DataSiswa>
+    suspend fun postdataSiswa(dataSiswa: DataSiswa):retrofit2.Response<Void>
+}
